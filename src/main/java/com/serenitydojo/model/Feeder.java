@@ -6,11 +6,8 @@ public class Feeder {
             return (isPremium) ? "Salmon" : "Tuna";
         } else if (animal.equals ("Dog")) {
             return (isPremium) ? "Deluxe Dog Food" : "Dog Food";
-        } else if (animal.equals ("Hampster")) {
-            if (isPremium) {
-                return "Lettuce";
-            }
+        } else {
+            return (isPremium) ? "Lettuce" : "Cabbage";
         }
-        return "Cabbage";
     }
 }
